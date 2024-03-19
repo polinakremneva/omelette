@@ -25,6 +25,12 @@
   --content-font-size: 16px;
 }
 
+img {
+  display: block;
+  max-width: 100%;
+  border-radius: 15px;
+}
+
 @media screen and (max-width: 375px) {
   .main-container {
     display: flex;
@@ -35,6 +41,9 @@
   }
   img {
     border-radius: 0;
+  }
+  .main-content {
+    padding: 20px;
   }
 }
 
@@ -47,12 +56,6 @@
 
 body {
   background: var(--eggshell);
-}
-
-img {
-  display: block;
-  max-width: 100%;
-  border-radius: 15px;
 }
 
 #main-heading {
