@@ -62,7 +62,7 @@ body {
   color: var(--dark-charcoal);
   font-family: var(--ff-accent);
   font-weight: var(--accent-weight);
-  font-size: calc(var(--content-font-size) * 2.75);
+  font-size: calc(var(--content-font-size) * 2.3);
   padding-block: 20px;
   letter-spacing: 0.1rem;
 }
@@ -139,6 +139,7 @@ p.bold {
 li::marker {
   font-weight: bold;
   color: var(--nutmeg);
+  padding-left: 10px;
 }
 
 section {
@@ -154,4 +155,7 @@ ul.flex.flex-list {
 ol.flex.flex-list {
   align-self: flex-start;
   padding-left: 20px;
+}
+span.bold {
+  padding-left: 10px;
 }
