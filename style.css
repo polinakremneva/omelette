@@ -1,0 +1,154 @@
+* {
+  margin: 0;
+  /* padding: 0; */
+  box-sizing: border-box;
+  font-family: var(--ff-base);
+}
+
+:root {
+  --white: hsl(0, 0%, 100%);
+  --rose-white: hsl(330, 100%, 98%);
+  --eggshell: hsl(30, 54%, 90%);
+  --light-grey: hsl(30, 18%, 87%);
+  --wenge-brown: hsl(30, 10%, 34%);
+  --dark-charcoal: hsl(24, 5%, 18%);
+
+  --nutmeg: hsl(14, 45%, 36%);
+  --dark-raspberry: hsl(332, 51%, 32%);
+
+  --ff-accent: "Young Serif", serif;
+  --ff-base: "Outfit", sans-serif;
+
+  --accent-weight: 400;
+  --content-weight-1: 400;
+  --content-weight-2: 700;
+  --content-font-size: 16px;
+}
+
+@media screen and (max-width: 375px) {
+  .main-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 0;
+    margin: auto;
+  }
+  img {
+    border-radius: 0;
+  }
+}
+
+@media screen and (min-width: 376px) {
+  .main-container {
+    margin: 40px auto;
+    padding: 30px 40px;
+  }
+}
+
+body {
+  background: var(--eggshell);
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  border-radius: 15px;
+}
+
+#main-heading {
+  color: var(--dark-charcoal);
+  font-family: var(--ff-accent);
+  font-weight: var(--accent-weight);
+  font-size: calc(var(--content-font-size) * 2.75);
+  padding-block: 20px;
+  letter-spacing: 0.1rem;
+}
+
+#content {
+  padding-bottom: 2rem;
+  letter-spacing: 0.01rem;
+}
+.main-container {
+  max-height: 100%;
+  max-width: 700px;
+  background: var(--white);
+  font-weight: var(--content-weight-1);
+  font-size: var(--content-font-size);
+  color: var(--wenge-brown);
+  border-radius: 15px;
+  flex-wrap: wrap;
+}
+
+.bold {
+  font-weight: var(--content-weight-2);
+}
+.bold.font {
+  font-size: x-large;
+  font-weight: var(--content-weight-1);
+  color: var(--nutmeg);
+  font-family: var(--ff-accent);
+  padding-block: 1rem;
+}
+
+.flex {
+  display: flex;
+  flex-direction: column;
+}
+.flex.flex-prep {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  padding-block: 30px;
+  background-color: var(--rose-white);
+}
+#preparation {
+  padding-left: 16px;
+  color: var(--dark-raspberry);
+  font-size: larger;
+}
+.flex.flex-prep li {
+  padding-bottom: 0.5rem;
+}
+
+.flex-nutr {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 15px;
+}
+.flex.flex-list li {
+  padding-bottom: 15px;
+}
+.flex.flex-list {
+  padding-bottom: 20px;
+}
+hr {
+  height: 1px;
+  background-color: rgb(196, 193, 189);
+  border: none;
+}
+.flex-table p.content {
+  padding-bottom: 20px;
+}
+p.bold {
+  color: var(--nutmeg);
+}
+
+li::marker {
+  font-weight: bold;
+  color: var(--nutmeg);
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+ul.flex.flex-list {
+  align-self: flex-start;
+  padding-left: 20px;
+}
+
+ol.flex.flex-list {
+  align-self: flex-start;
+  padding-left: 20px;
+}
